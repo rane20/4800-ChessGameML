@@ -35,7 +35,7 @@ public class MoveScorer {
         float bestQuality = -1.0f;
     
         for (short move : legalMoves) {
-            if (Move.getFromSqi(move) != fromSqi) continue; // 👈 only consider clicked piece
+            if (Move.getFromSqi(move) != fromSqi) continue; // only consider clicked piece
     
             try {
                 position.doMove(move);
